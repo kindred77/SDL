@@ -166,7 +166,7 @@ else()
   set(UNIX_SYS OFF)
 endif()
 
-if((UNIX OR APPLE) AND NOT CMAKE_SYSTEM_NAME STREQUAL "MSYS")
+if(UNIX OR APPLE)
   set(UNIX_OR_MAC_SYS ON)
 else()
   set(UNIX_OR_MAC_SYS OFF)
